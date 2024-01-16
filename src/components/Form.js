@@ -34,8 +34,9 @@ const Form = () => {
 	return (
 		<>
 			<form onSubmit={handleSubmit}>
-				<label>Sprawdź repozytoria użytkownika: </label>
+				<label htmlFor='ghLogin'>Sprawdź repozytoria użytkownika: </label>
 				<input
+					id='ghLogin'
 					type='text'
 					value={textInput}
 					onChange={(e) => setTextInput(e.target.value)}
