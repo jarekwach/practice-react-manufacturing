@@ -42,7 +42,7 @@ const Form = () => {
 					onChange={(e) => setTextInput(e.target.value)}
 					placeholder='GitHub login'
 				/>
-				<button type='submit'>Wyślij</button>
+				<button type='submit'>Send</button>
 			</form>
 			<ul>
 				{repoList.map((repo) => (
