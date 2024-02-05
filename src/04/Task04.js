@@ -12,6 +12,7 @@ const Task04 = () => {
 					netlify
 				</a>
 			</p>
+			<p>prywatne repozytoria React:</p>
 			<PrivateRepos />
 		</div>
 	);

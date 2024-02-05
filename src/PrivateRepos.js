@@ -9,13 +9,13 @@ async function getRepos(filter) {
 export default function Repos() {
 	const [reposList, setRepoList] = useState([]);
 	useEffect(() => {
-		getRepos().then((data) => setRepoList(data));
+		getRepos('task-react').then((data) => setRepoList(data));
 	}, []);
 
 	return (
 		<ul>
 			{reposList.map((repo) => (
-				<li>{repo.name}</li>
+				<li key={repo.id}>{repo.name}</li>
 			))}
 		</ul>
 	);
